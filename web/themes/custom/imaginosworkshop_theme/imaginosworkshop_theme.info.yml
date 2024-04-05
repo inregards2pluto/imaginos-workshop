@@ -1,0 +1,22 @@
+name: imaginosworkshop_theme
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - imaginosworkshop_theme/base
+  - imaginosworkshop_theme/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - imaginosworkshop_theme/user
+  core/drupal.dropbutton:
+    - imaginosworkshop_theme/dropbutton
+  core/drupal.dialog:
+    - imaginosworkshop_theme/dialog
+  file/drupal.file:
+    - imaginosworkshop_theme/file
+  core/drupal.progress:
+    - imaginosworkshop_theme/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.2.5'
